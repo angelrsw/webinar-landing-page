@@ -87,7 +87,8 @@ img{max-width:100%;display:block}
 }
 .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--navy-900);font-size:1.1rem}
-.logo svg{width:36px;height:36px}
+.logo img{height:42px;width:auto;display:block}
+@media (max-width:640px){.logo img{height:34px}}
 .nav-links{display:flex;gap:28px;align-items:center}
 .nav-links a{color:var(--gray-700);font-weight:500;font-size:.95rem}
 .nav-links a:hover{color:var(--blue-600)}
@@ -477,12 +478,8 @@ section{padding:88px 0}
 <!-- ===== NAV (simplified for mockup) ===== -->
 <nav class="nav">
   <div class="container nav-inner">
-    <a class="logo" href="/">
-      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="40" height="40" rx="10" fill="#0f2c54"/>
-        <path d="M12 14h10a5 5 0 010 10h-4l6 6h-6l-6-6v-4h10a1 1 0 000-2H12v-4z" fill="#ff6b35"/>
-      </svg>
-      Resaleworld
+    <a class="logo" href="/" aria-label="Resaleworld.com home">
+      <img src="resaleworld-logo.svg" alt="Resaleworld.com" />
     </a>
     <div class="nav-links" id="navLinks">
       <a href="#upcoming-webinars">Webinars</a>
@@ -937,9 +934,8 @@ section{padding:88px 0}
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-logo">
-          <svg width="32" height="32" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#1e5a96"/><path d="M12 14h10a5 5 0 010 10h-4l6 6h-6l-6-6v-4h10a1 1 0 000-2H12v-4z" fill="#ff6b35"/></svg>
-          Resaleworld.com
+        <div class="footer-logo" style="background:#fff;padding:10px 14px;border-radius:10px;display:inline-flex;width:auto">
+          <img src="resaleworld-logo.svg" alt="Resaleworld.com" style="height:38px;width:auto;display:block" />
         </div>
         <p style="max-width:320px;line-height:1.7">The #1 consignment, resale, and thrift software — backed by live training, real experts, and 25+ years of experience.</p>
         <div style="margin-top:18px">
